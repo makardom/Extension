@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Webtime</title>
+    <link href="popup.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<header>
+    <h1>
+        Your Webtime
+    </h1>
+</header>
+<h1 id="hello"></h1>
+<h1>Sites:</h1>
+<div id="table-wrapper">
+    <div id="table-scroll">
+        <table>
+            <thead>
+            <tr>
+                <th><span class="text">Hostname</span></th>
+                <th><span class="text">Clicks</span></th>
+                <th><span class="text">Time</span></th>
+            </tr>
+            </thead>
+            <tbody id="container"></tbody>
+        </table>
+    </div>
+</div>
+
+<script src="content.js"></script>
+<script src="background.js"></script>
+<script src="popup.js"></script>
+</body>
+</html>

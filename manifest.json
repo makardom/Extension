@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Your Time",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": [ "https://*/*", "http://*/*" ],
+      "js": [ "content.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": ["tabs", "storage", "unlimitedStorage"],
+
+  "browser_action": {
+    "default_title": "Your Time",
+    "default_popup": "popup.html"
+  }
+}
